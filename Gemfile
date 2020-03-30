@@ -52,7 +52,7 @@ group :development do
   # Guard is a command line tool to easily handle events on file system modifications.
   gem 'guard', '~> 2.16', '>= 2.16.2'
   # LiveReload guard allows to automatically reload your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 
 group :test do
