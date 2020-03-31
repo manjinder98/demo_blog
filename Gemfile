@@ -36,7 +36,7 @@ end
 # Bulma CSS
 gem 'bulma-rails', '~> 0.8.0'
 
-# Simple forms
+# Simple partials
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 group :development do
