@@ -1,21 +1,5 @@
 <%= content_for :page_title, @post.title %>
 
-
-<% if @post == false %>
-  <section class="hero is-medium is-danger is-bold">
-    <div class="hero-body">
-      <div class="container">
-        <p class="title">
-          Error while edit!
-        </p>
-        <p class="subtitle">
-          Please try again!
-        </p>
-      </div>
-    </div>
-  </section>
-<% end %>
-
 <section class="section">
   <div class="container">
     <nav class="level">
