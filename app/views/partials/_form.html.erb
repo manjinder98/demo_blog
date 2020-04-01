@@ -1,6 +1,5 @@
 <div class="section">
   <%= simple_form_for @post do |f| %>
-    <%= f.error_notification %>
     <% @post.errors.full_messages.each do |msg| %>
       <div class="notification is-danger">
         <%= msg %>
