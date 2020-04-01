@@ -3,11 +3,7 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create(params[:comment].permit(:name, :comment))
 
-    if @comment
-      redirect_to post_path(@post)
-    else
-      render 'posts/show'
-    end
+    redirect_to post_path(@post), flash: { error: @comment.errors.full_messages }
   end
 
   def destroy
