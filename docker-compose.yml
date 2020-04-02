@@ -1,0 +1,22 @@
+version: '2'
+services:
+  db:
+    image: "postgres:12"
+    environment:
+      POSTGRES_DB: "demo_blog_development"
+      POSTGRES_PASSWORD: 7x!27DZKv1Q%
+      POSTGRES_USER: manjinder98
+    volumes:
+      - ./data:/var/lib/postgresql/data
+  web:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    environment:
+      - PGHOST=db
+      - PGUSER=manjinder98
+    volumes:
+      - .:/demo_blog
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
