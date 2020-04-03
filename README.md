@@ -16,7 +16,7 @@ Here is what is included in the docker-compose stack:
 * Rails server (puma)
 * Simple Form
 * Guard
-* Guard LiveReload
+* Guard::LiveReload
 * Better Errors
 
 This application runs on `localhost` and port `3000`
