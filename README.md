@@ -21,8 +21,7 @@ Here is what is included in the docker-compose stack:
 
 This application runs on `localhost` and port `3000`
 
-## Rails: create and migrate database
-To run migration
+## Rails: to run migration
 
 ```
 docker-compose run web rake db:migrate
