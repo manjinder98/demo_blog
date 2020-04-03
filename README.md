@@ -1,24 +1,28 @@
-# README
+# Introduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Blog application for posting blog posts with comments.
 
-Things you may want to cover:
+# Start Application Locally
 
-* Ruby version
+The first thing you need is Docker:
 
-* System dependencies
+Docker will take care of all the needed dependencies:
 
-* Configuration
+```
+docker-compose up
+```
+Here is what is included in the docker-compose stack:
+* Postgresql
+* Rails server (puma)
+* Simple Form
+* Guard
+* Guard LiveReload
+* Better Errors
 
-* Database creation
+This application runs on `localhost` and port `3000`
 
-* Database initialization
+## Rails: to run migration
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+docker-compose run web rake db:migrate
+```      
