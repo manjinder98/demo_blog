@@ -12,12 +12,13 @@ Docker will take care of all the needed dependencies:
 docker-compose up
 ```
 Here is what is included in the docker-compose stack:
-* Postgresql
-* Rails server (puma)
-* Simple Form
-* Guard
-* Guard::LiveReload
-* Better Errors
+- [PostgreSQL] (https://github.com/ged/ruby-pg)
+- [Rails Server (puma)] (https://puma.io/)
+- [Simple Form](https://github.com/plataformatec/simple_form)
+- [Guard](https://github.com/guard/guard)
+- [Guard LiveReload](https://github.com/guard/guard-livereload)
+- [Better Errors](https://rubygems.org/gems/better_errors) - Easier on 
+- [Bulma](https://github.com/joshuajansen/bulma-rails)
 
 This application runs on `localhost` and port `3000`
 
