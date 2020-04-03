@@ -17,7 +17,7 @@ Here is what is included in the docker-compose stack:
 - [Simple Form](https://github.com/plataformatec/simple_form)
 - [Guard](https://github.com/guard/guard)
 - [Guard LiveReload](https://github.com/guard/guard-livereload)
-- [Better Errors](https://rubygems.org/gems/better_errors) - Easier on 
+- [Better Errors](https://rubygems.org/gems/better_errors) 
 - [Bulma](https://github.com/joshuajansen/bulma-rails)
 
 This application runs on `localhost` and port `3000`
