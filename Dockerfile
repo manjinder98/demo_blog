@@ -10,5 +10,4 @@ ADD Gemfile /demo_blog/Gemfile
 ADD Gemfile.lock /demo_blog/Gemfile.lock
 RUN yarn install --check-files
 RUN bundle install
-RUN rake webpacker:install
 ADD . /demo_blog
