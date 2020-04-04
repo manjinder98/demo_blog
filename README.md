@@ -11,6 +11,12 @@ Docker will take care of all the needed dependencies:
 ```
 docker-compose up
 ```
+In another terminal run this:
+
+```
+docker-compose run web rake webpacker:install
+```
+
 Here is what is included in the docker-compose stack:
 - [PostgreSQL](https://github.com/ged/ruby-pg)
 - [Rails Server (puma)](https://puma.io/)
