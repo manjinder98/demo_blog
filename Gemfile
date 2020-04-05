@@ -52,6 +52,8 @@ group :development do
   gem 'guard-livereload', '~> 2.5', require: false
   # Make errors better looking
   gem 'better_errors', '~> 2.6'
+  # Code style checking tool
+  gem 'rubocop', require: false
 end
 
 group :test do
