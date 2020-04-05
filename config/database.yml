@@ -3,14 +3,14 @@ default: &default
   encoding: unicode
   template: template0
   pool: 5
-  username: manjinder98
-  password: 7x!27DZKv1Q%
+  username: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   timeout: 5000
 
 development:
   <<: *default
-  database: demo_blog_development
+  database: <%= ENV['DATABASE_NAME'] %>
 
 test:
   <<: *default
-  database: demo_blog_test
+  database: <%= ENV['DATABASE_NAME_TEST'] %>
