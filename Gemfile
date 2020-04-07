@@ -39,6 +39,9 @@ gem 'bulma-rails', '~> 0.8.0'
 # Simple partials
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
+# Rails admin
+gem 'rails_admin', '~> 2.0'
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
