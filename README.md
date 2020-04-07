@@ -18,7 +18,7 @@ docker-compose run web rake webpacker:install
 ```
 
 Here is what is included in the docker-compose stack:
-- [RailsAdmin] (https://github.com/sferik/rails_admin)
+- [RailsAdmin](https://github.com/sferik/rails_admin)
 - [PostgreSQL](https://github.com/ged/ruby-pg)
 - [Rails Server (puma)](https://puma.io/)
 - [Simple Form](https://github.com/plataformatec/simple_form)
