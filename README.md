@@ -34,3 +34,10 @@ This application runs on `localhost` and port `3000`
 ```
 docker-compose run web rake db:migrate
 ```      
+
+## To generate ENV file
+
+```
+cp .env.example .env
+```
+
