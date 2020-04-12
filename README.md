@@ -11,7 +11,7 @@ Docker will take care of all the needed dependencies:
 ```
 docker-compose up
 ```
-In another terminal run this:
+In another terminal run this to install webpacker:
 
 ```
 docker-compose run web rake webpacker:install
