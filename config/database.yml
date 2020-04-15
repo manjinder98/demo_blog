@@ -14,3 +14,10 @@ development:
 test:
   <<: *default
   database: <%= ENV['DATABASE_NAME_TEST'] %>
+
+production:
+  <<: *default
+  host: <%= ENV['DATABASE_HOST_PRODUCTION'] %>
+  username: <%= ENV['DATABASE_USER_PRODUCTION'] %>
+  password: <%= ENV['DATABASE_PASSWORD_PRODUCTION'] %>
+  database: <%= ENV['DATABASE_NAME_PRODUCTION'] %>
