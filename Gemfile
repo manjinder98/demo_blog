@@ -43,6 +43,9 @@ gem 'simple_form', '~> 5.0', '>= 5.0.2'
 # Rails admin
 gem 'rails_admin', '~> 2.0'
 
+# Devise authentication
+gem 'devise', '~> 4.7', '>= 4.7.1'
+
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'

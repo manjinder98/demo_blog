@@ -9,6 +9,11 @@ RailsAdmin.config do |config|
   config.label_methods << :description # Default is [:name, :title]
 
   config.browser_validations = false # Default is true
+
+  config.authenticate_with do
+    warden.authenticate! scope: :user
+  end
+  config.current_user_method(&:current_user)
   ## == Devise ==
   # config.authenticate_with do
   #   warden.authenticate! scope: :user

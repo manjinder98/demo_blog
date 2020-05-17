@@ -26,7 +26,6 @@
             <div id="navbarMenuHeroA" class="navbar-menu">
               <div class="navbar-end">
                 <%= link_to "Create New Post", new_post_path, class:"navbar-item" %>
-                <%= link_to "Dashboard", rails_admin_path, class:"navbar-item" %>
               </div>
             </div>
           </div>
@@ -42,6 +41,12 @@
         </div>
       </div>
     </section>
+
+    <div>
+      <p class="notice"><%= notice if notice.present? %></p>
+      <p class="alert"><%= alert if alert.present? %></p>
+    </div>
+
     <%= yield %>
   </body>
 </html>
